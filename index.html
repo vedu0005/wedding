@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Santhosh & Divya | Wedding Invitation</title>
+  
+  <!-- Open Graph / Meta for WhatsApp & Social Sharing -->
+  <meta property="og:title" content="Santhosh & Divya - Wedding Invitation">
+  <meta property="og:description" content="🌸✨ We cordially solicit your gracious presence on the auspicious occasion of our wedding. ✨🌸">
+  <meta property="og:image" content="assets/images/couple-temple-color.jpg">
+  <meta name="theme-color" content="#FAF7F2">
+
+  <!-- Google Fonts: Luxury Serif, Romantic Script & Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700;800&family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==============================================
+       1. OPENING SCREEN (Dark Charcoal with Golden Monogram)
+       ============================================== -->
+  <div id="openingScreen" class="opening-screen" role="dialog" aria-modal="true" aria-label="Wedding Monogram Opening Screen">
+    <div class="opening-overlay"></div>
+    <div class="opening-content">
+      <!-- Golden Monogram -->
+      <div class="monogram-wrapper" id="monogramWrapper">
+        <div class="monogram-glow"></div>
+        <img src="assets/images/monogram.svg" alt="S ❤️ D Monogram" class="monogram-svg">
+      </div>
+
+      <!-- Couple Names in Gold -->
+      <h1 class="opening-names">SANTHOSH & DIVYA</h1>
+      <p class="opening-tagline">ARE GETTING MARRIED</p>
+
+      <!-- Invitation Enter Action -->
+      <button id="enterInviteBtn" class="enter-btn" aria-label="Open Wedding Invitation">
+        <span class="enter-btn-text">OPEN INVITATION</span>
+        <svg class="chevron-down" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+
+      <p class="opening-hint">Tap to open invitation with music</p>
+    </div>
+  </div>
+
+  <!-- ==============================================
+       FLOATING AUDIO CONTROLLER
+       ============================================== -->
+  <aside class="floating-audio" aria-label="Background Music Controller">
+    <button id="audioToggleBtn" class="audio-btn" aria-label="Toggle background wedding shehnai music">
+      <div class="equalizer-bars" aria-hidden="true">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
+      <svg id="audioMuteIcon" class="audio-icon hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <line x1="23" y1="9" x2="17" y2="15"></line>
+        <line x1="17" y1="9" x2="23" y2="15"></line>
+      </svg>
+      <span class="audio-label">MUSIC</span>
+    </button>
+    <audio id="weddingMusic" loop preload="auto" src="assets/audio/wedding-music.aac"></audio>
+  </aside>
+
+  <!-- ==============================================
+       MAIN INVITATION CONTAINER (Ivory Patterned Background)
+       ============================================== -->
+  <main id="mainContent" class="main-container">
+
+    <!-- Top Cinematic Header Banner -->
+    <header class="hero-banner">
+      <div class="hero-image-wrapper">
+        <img src="assets/images/couple-temple-color.jpg" alt="Santhosh & Divya" class="hero-img">
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-text-overlay">
+          <span class="hero-subtitle">THE WEDDING CELEBRATION</span>
+          <h2 class="hero-couple-title">Santhosh & Divya</h2>
+          <span class="hero-date">14 & 15 NOVEMBER 2026</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION: MAIN WEDDING INVITATION -->
+    <section class="section invitation-section" id="invitationSection">
+      <div class="content-box">
+        <!-- Top Traditional Indian Floral Flourish -->
+        <div class="flourish-container">
+          <img src="assets/images/floral-divider.svg" alt="Decorative Divider" class="floral-flourish-svg">
+        </div>
+
+        <p class="section-kicker">WEDDING INVITATION</p>
+        
+        <h2 class="shimmer-gold-text">HAPPY MARRIED LIFE</h2>
+
+        <div class="flourish-container mini">
+          <img src="assets/images/floral-divider.svg" alt="Decorative Divider" class="floral-flourish-svg flipped">
+        </div>
+
+        <!-- Exact Mandated Invitation Text -->
+        <div class="invitation-text-card">
+          <p class="invitation-lead">
+            🌸✨ We cordially solicit your gracious presence, along with your family and friends, on the auspicious occasion of our wedding. ✨🌸
+          </p>
+        </div>
+
+        <!-- Prominent Romantic Names -->
+        <div class="couple-names-wrap">
+          <h3 class="romantic-names">
+            <span class="name-groom">Santhosh H</span>
+            <span class="heart-symbol" aria-hidden="true">❤️</span>
+            <span class="name-bride">Divya Pc</span>
+          </h3>
+          <p class="names-caption">Together with their families</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: GROOM & BRIDE INTRODUCTION -->
+    <section class="section profiles-section" id="profilesSection">
+      <div class="section-heading-wrap">
+        <h2 class="section-title">
+          GROOM <span class="ampersand">&</span> BRIDE
+        </h2>
+        <div class="sub-flourish"></div>
+      </div>
+
+      <!-- Offset / Staggered Profile Cards -->
+      <div class="profiles-container">
+        
+        <!-- The Groom Profile (Offset Left with Vertical Text on Right) -->
+        <article class="profile-card groom-card scroll-reveal reveal-left" id="groomProfile">
+          <div class="profile-frame">
+            <div class="photo-container">
+              <img src="assets/images/groom-santhosh.jpg" alt="The Groom - Santhosh H" class="profile-photo">
+            </div>
+            <div class="vertical-tag tag-right" aria-hidden="true">
+              <span>T H E &nbsp; G R O O M</span>
+            </div>
+          </div>
+          <div class="profile-info">
+            <h3 class="script-name">Mr. Santhosh H</h3>
+            <p class="profile-role">The Groom</p>
+          </div>
+        </article>
+
+        <!-- The Bride Profile (Offset Right with Vertical Text on Left & Blush Accent) -->
+        <article class="profile-card bride-card scroll-reveal reveal-right" id="brideProfile">
+          <div class="profile-frame blush-shadow">
+            <div class="vertical-tag tag-left" aria-hidden="true">
+              <span>T H E &nbsp; B R I D E</span>
+            </div>
+            <div class="photo-container">
+              <img src="assets/images/bride-divya.jpg" alt="The Bride - Divya Pc" class="profile-photo">
+            </div>
+          </div>
+          <div class="profile-info">
+            <h3 class="script-name">Ms. Divya Pc</h3>
+            <p class="profile-role">The Bride</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: WEDDING PHOTOGRAPHY GALLERY -->
+    <section class="section gallery-section" id="gallerySection">
+      <div class="section-heading-wrap">
+        <h2 class="section-title gallery-title">GALLERY</h2>
+        <p class="gallery-sub">Moments Frozen in Love</p>
+      </div>
+
+      <div class="gallery-container">
+        
+        <!-- Large Cinematic Landscape -->
+        <div class="gallery-item full-width-item scroll-reveal" data-index="0" data-caption="Timeless Heritage Moments | Santhosh & Divya">
+          <div class="photo-frame-editorial">
+            <img src="assets/images/couple-temple-color.jpg" alt="Santhosh & Divya at Heritage Temple" class="gallery-img">
+            <div class="frame-tag">VIEW PHOTO</div>
+          </div>
+        </div>
+
+        <!-- Asymmetrical Editorial Collage Row 1 -->
+        <div class="gallery-grid-2">
+          <!-- Item 1: Outdoor Close-up -->
+          <div class="gallery-item scroll-reveal" data-index="1" data-caption="Whispers of Eternity | Santhosh & Divya">
+            <div class="photo-frame-editorial">
+              <img src="assets/images/couple-outdoor-close.jpg" alt="Romantic portrait of Santhosh and Divya" class="gallery-img">
+              <div class="frame-tag">VIEW PHOTO</div>
+            </div>
+          </div>
+
+          <!-- Item 2: Temple Monochrome B&W -->
+          <div class="gallery-item scroll-reveal" data-index="2" data-caption="A Classic Love Story | Santhosh & Divya">
+            <div class="photo-frame-editorial monochrome-accent">
+              <img src="assets/images/couple-temple-bw.jpg" alt="Black and White portrait on stone steps" class="gallery-img">
+              <div class="frame-tag">VIEW PHOTO</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==============================================
+             SECTION: ROMANTIC QUOTE (Nested seamlessly in gallery)
+             ============================================== -->
+        <div class="romantic-quote-section scroll-reveal" id="quoteSection">
+          <div class="quote-card">
+            <div class="quote-ornament top">
+              <img src="assets/images/floral-divider.svg" alt="Divider" class="quote-divider-svg">
+            </div>
+            <blockquote class="wedding-quote">
+              <span class="quote-mark quote-start">“</span>
+              As we weave the threads of love, tradition, and togetherness, we invite you to be a part of our joyous celebration.
+              <span class="quote-mark quote-end">”</span>
+            </blockquote>
+            <div class="quote-ornament bottom">
+              <img src="assets/images/floral-divider.svg" alt="Divider" class="quote-divider-svg flipped">
+            </div>
+          </div>
+        </div>
+
+        <!-- Asymmetrical Editorial Collage Row 2 -->
+        <div class="gallery-grid-row scroll-reveal">
+          <!-- Full outdoor portrait -->
+          <div class="gallery-item featured-portrait" data-index="3" data-caption="Grace and Togetherness | Santhosh & Divya">
+            <div class="photo-frame-editorial">
+              <img src="assets/images/couple-outdoor-full.jpg" alt="Full outdoor portrait of the couple" class="gallery-img">
+              <div class="frame-tag">VIEW PHOTO</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: WEDDING EVENTS -->
+    <section class="section events-section" id="eventsSection">
+      <div class="section-heading-wrap">
+        <h2 class="section-title events-title">EVENTS</h2>
+        <p class="events-sub">Auspicious Occasions</p>
+      </div>
+
+      <div class="events-cards-wrapper">
+        
+        <!-- EVENT CARD 1: RECEPTION -->
+        <article class="event-card scroll-reveal" id="receptionCard">
+          <!-- Corner Traditional Indian Filigree Ornaments -->
+          <img src="assets/images/corner-ornament.svg" alt="" class="card-corner corner-tr" aria-hidden="true">
+          <img src="assets/images/corner-ornament.svg" alt="" class="card-corner corner-bl" aria-hidden="true">
+          
+          <!-- Event Photograph -->
+          <div class="event-photo-wrapper">
+            <img src="assets/images/event-reception.jpg" alt="Grand Wedding Reception Stage" class="event-photo">
+            <div class="event-photo-overlay"></div>
+          </div>
+
+          <!-- Event Content -->
+          <div class="event-content">
+            <h3 class="event-name">RECEPTION</h3>
+            <div class="event-divider"></div>
+
+            <ul class="event-meta-list">
+              <!-- Date -->
+              <li class="meta-item">
+                <div class="meta-icon-box">
+                  <svg class="meta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <span class="meta-label">DATE</span>
+                  <strong class="meta-value">14 November 2026, Saturday</strong>
+                </div>
+              </li>
+
+              <!-- Time -->
+              <li class="meta-item">
+                <div class="meta-icon-box">
+                  <svg class="meta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <span class="meta-label">TIME</span>
+                  <strong class="meta-value">6:30 PM onwards</strong>
+                </div>
+              </li>
+
+              <!-- Venue -->
+              <li class="meta-item">
+                <div class="meta-icon-box">
+                  <svg class="meta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <span class="meta-label">VENUE</span>
+                  <strong class="meta-value venue-address">
+                    Rajatha Bhavana (BWSSB),<br>
+                    8th–19th Cross, Malleshwaram,<br>
+                    Bengaluru – 560012
+                  </strong>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Buttons: View Map & Add to Calendar -->
+            <div class="event-action-group">
+              <a href="https://maps.app.goo.gl/1igz8wmsoEvwR9BR8" target="_blank" rel="noopener noreferrer" class="map-btn" aria-label="Open Google Maps Location for Reception">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                  <line x1="8" y1="2" x2="8" y2="18"></line>
+                  <line x1="16" y1="6" x2="16" y2="22"></line>
+                </svg>
+                <span>VIEW MAP</span>
+              </a>
+
+              <button class="cal-btn" onclick="addToCalendar('reception')" aria-label="Add Reception to Calendar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                <span>ADD TO CALENDAR</span>
+              </button>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- EVENT CARD 2: MUHURTHA -->
+        <article class="event-card scroll-reveal" id="muhurthaCard">
+          <!-- Corner Traditional Indian Filigree Ornaments -->
+          <img src="assets/images/corner-ornament.svg" alt="" class="card-corner corner-tr" aria-hidden="true">
+          <img src="assets/images/corner-ornament.svg" alt="" class="card-corner corner-bl" aria-hidden="true">
+          
+          <!-- Event Photograph -->
+          <div class="event-photo-wrapper">
+            <img src="assets/images/event-muhurtha.jpg" alt="Sacred Muhurtha Wedding Ceremony" class="event-photo">
+            <div class="event-photo-overlay"></div>
+          </div>
+
+          <!-- Event Content -->
+          <div class="event-content">
+            <h3 class="event-name">MUHURTHA</h3>
+            <div class="event-divider"></div>
+
+            <ul class="event-meta-list">
+              <!-- Date -->
+              <li class="meta-item">
+                <div class="meta-icon-box">
+                  <svg class="meta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <span class="meta-label">DATE</span>
+                  <strong class="meta-value">15 November 2026, Sunday</strong>
+                </div>
+              </li>
+
+              <!-- Time -->
+              <li class="meta-item">
+                <div class="meta-icon-box">
+                  <svg class="meta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <span class="meta-label">TIME</span>
+                  <strong class="meta-value">6:00 AM – 7:30 AM</strong>
+                </div>
+              </li>
+
+              <!-- Venue -->
+              <li class="meta-item">
+                <div class="meta-icon-box">
+                  <svg class="meta-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="meta-details">
+                  <span class="meta-label">VENUE</span>
+                  <strong class="meta-value venue-address">
+                    Rajatha Bhavana (BWSSB),<br>
+                    8th–19th Cross, Malleshwaram,<br>
+                    Bengaluru – 560012
+                  </strong>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Buttons: View Map & Add to Calendar -->
+            <div class="event-action-group">
+              <a href="https://maps.app.goo.gl/1igz8wmsoEvwR9BR8" target="_blank" rel="noopener noreferrer" class="map-btn" aria-label="Open Google Maps Location for Muhurtha">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                  <line x1="8" y1="2" x2="8" y2="18"></line>
+                  <line x1="16" y1="6" x2="16" y2="22"></line>
+                </svg>
+                <span>VIEW MAP</span>
+              </a>
+
+              <button class="cal-btn" onclick="addToCalendar('muhurtha')" aria-label="Add Muhurtha to Calendar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="16"></line>
+                  <line x1="8" y1="12" x2="16" y2="12"></line>
+                </svg>
+                <span>ADD TO CALENDAR</span>
+              </button>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SECTION: ENDING & FOOTER -->
+    <section class="section ending-section" id="endingSection">
+      <div class="ending-content scroll-reveal">
+        
+        <!-- Royal Peacock Motif in Antique Gold -->
+        <div class="peacock-container">
+          <img src="assets/images/peacock-motif.svg" alt="Royal Indian Peacock Motif" class="peacock-svg">
+        </div>
+
+        <div class="ending-ornament">
+          <img src="assets/images/floral-divider.svg" alt="Flourish" class="floral-flourish-svg">
+        </div>
+
+        <!-- Exact Mandated Ending Text -->
+        <h2 class="ending-heading">
+          We look forward to celebrating this special day with you!
+        </h2>
+
+        <!-- Names -->
+        <div class="ending-names-wrap">
+          <h3 class="romantic-names ending-names">
+            <span>Santhosh H</span>
+            <span class="heart-symbol" aria-hidden="true">❤️</span>
+            <span>Divya Pc</span>
+          </h3>
+          <p class="ending-hashtag">#SanthoshWedsDivya</p>
+        </div>
+
+        <!-- Footer Monogram -->
+        <div class="footer-monogram-wrap">
+          <img src="assets/images/monogram.svg" alt="S ❤️ D Monogram" class="footer-monogram">
+          <p class="footer-signoff">WITH LOVE & BLESSINGS</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================
+       FULL-SCREEN PHOTOGRAPH LIGHTBOX VIEWER
+       ============================================== -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Full-screen photo viewer">
+    <div class="lightbox-backdrop"></div>
+    
+    <div class="lightbox-dialog">
+      <!-- Close Button -->
+      <button id="lightboxCloseBtn" class="lightbox-btn lightbox-close" aria-label="Close photo viewer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Main Image Container -->
+      <div class="lightbox-stage">
+        <button id="lightboxPrevBtn" class="lightbox-btn lightbox-nav lightbox-prev" aria-label="Previous photograph">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <div class="lightbox-image-wrapper">
+          <img id="lightboxImg" src="" alt="Enlarged wedding photograph" class="lightbox-image">
+        </div>
+
+        <button id="lightboxNextBtn" class="lightbox-btn lightbox-nav lightbox-next" aria-label="Next photograph">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Caption & Index -->
+      <div class="lightbox-footer">
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+        <span id="lightboxIndex" class="lightbox-counter">1 / 4</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

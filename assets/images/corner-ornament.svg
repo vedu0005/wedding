@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <defs>
+    <linearGradient id="goldCornerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C77C"/>
+      <stop offset="50%" stop-color="#C59B4B"/>
+      <stop offset="100%" stop-color="#8E6A26"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldCornerGrad)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer Corner Border Lines -->
+    <path d="M 4,76 L 4,4 L 76,4" />
+    <path d="M 8,76 L 8,8 L 76,8" stroke-width="0.8" stroke-dasharray="3 2" />
+    <!-- Decorative Scrolls and Curves -->
+    <path d="M 14,35 C 14,20 20,14 35,14" />
+    <path d="M 4,44 C 18,44 24,32 24,24 C 24,14 14,24 20,30" />
+    <path d="M 44,4 C 44,18 32,24 24,24" />
+    <!-- Floral Blossom at Corner -->
+    <circle cx="24" cy="24" r="3" fill="url(#goldCornerGrad)" />
+    <path d="M 24,18 C 22,21 22,27 24,30 C 26,27 26,21 24,18 Z" fill="url(#goldCornerGrad)" fill-opacity="0.6" stroke="none" />
+    <path d="M 18,24 C 21,22 27,22 30,24 C 27,26 21,26 18,24 Z" fill="url(#goldCornerGrad)" fill-opacity="0.6" stroke="none" />
+    <!-- Outer tips -->
+    <circle cx="6" cy="6" r="1.5" fill="url(#goldCornerGrad)" />
+    <circle cx="76" cy="4" r="2" fill="url(#goldCornerGrad)" />
+    <circle cx="4" cy="76" r="2" fill="url(#goldCornerGrad)" />
+  </g>
+</svg>
