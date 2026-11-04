@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" width="160" height="120">
+  <defs>
+    <linearGradient id="goldPeacock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EED89B"/>
+      <stop offset="50%" stop-color="#C59B4B"/>
+      <stop offset="100%" stop-color="#8C6A24"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldPeacock)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Peacock Crest (Kalgi) -->
+    <path d="M 62,28 C 60,20 54,16 52,12" stroke-width="1"/>
+    <path d="M 64,27 C 64,18 62,14 62,9" stroke-width="1"/>
+    <path d="M 66,28 C 69,20 74,16 77,12" stroke-width="1"/>
+    <circle cx="52" cy="11" r="2" fill="url(#goldPeacock)"/>
+    <circle cx="62" cy="8" r="2.2" fill="url(#goldPeacock)"/>
+    <circle cx="77" cy="11" r="2" fill="url(#goldPeacock)"/>
+    
+    <!-- Peacock Head & Beak -->
+    <path d="M 58,32 C 58,26 64,24 68,26 C 72,28 73,34 71,38 C 69,42 66,46 66,52" stroke-width="1.5"/>
+    <path d="M 59,29 L 52,31 L 58,34" fill="url(#goldPeacock)" fill-opacity="0.3"/>
+    <circle cx="64" cy="29" r="1.2" fill="url(#goldPeacock)"/>
+    
+    <!-- Slender Neck & Graceful Body -->
+    <path d="M 66,52 C 66,62 74,70 82,72 C 92,74 98,66 98,58 C 98,48 88,44 78,48" stroke-width="1.4"/>
+    <path d="M 60,34 C 60,42 62,48 64,54" stroke-width="1.2"/>
+    
+    <!-- Elegant Arching Feather Plumes (Tail) -->
+    <path d="M 82,72 C 70,82 50,86 32,80 C 18,74 12,58 16,42 C 20,30 32,22 46,26" stroke-dasharray="3 2" stroke-width="1"/>
+    <path d="M 86,70 C 80,84 66,96 48,98 C 30,100 12,88 8,70 C 4,50 14,32 30,22" stroke-width="1.2"/>
+    <path d="M 88,68 C 96,82 108,94 124,96 C 142,98 154,82 152,66 C 150,48 136,34 118,28" stroke-width="1.2"/>
+    <path d="M 84,72 C 100,82 118,84 134,76 C 146,70 150,56 144,42" stroke-dasharray="3 2" stroke-width="1"/>
+    
+    <!-- Feather Eye Motifs (Mayura Ocelli) -->
+    <ellipse cx="28" cy="38" rx="5" ry="7" transform="rotate(-30 28 38)" stroke-width="1.2"/>
+    <circle cx="28" cy="38" r="2.5" fill="url(#goldPeacock)"/>
+    
+    <ellipse cx="18" cy="62" rx="5" ry="7" transform="rotate(10 18 62)" stroke-width="1.2"/>
+    <circle cx="18" cy="62" r="2.5" fill="url(#goldPeacock)"/>
+    
+    <ellipse cx="44" cy="90" rx="7" ry="5" transform="rotate(-15 44 90)" stroke-width="1.2"/>
+    <circle cx="44" cy="90" r="2.5" fill="url(#goldPeacock)"/>
+
+    <ellipse cx="132" cy="48" rx="5" ry="7" transform="rotate(30 132 48)" stroke-width="1.2"/>
+    <circle cx="132" cy="48" r="2.5" fill="url(#goldPeacock)"/>
+    
+    <ellipse cx="120" cy="88" rx="7" ry="5" transform="rotate(20 120 88)" stroke-width="1.2"/>
+    <circle cx="120" cy="88" r="2.5" fill="url(#goldPeacock)"/>
+    
+    <!-- Lotus Perch Base -->
+    <path d="M 68,76 C 72,82 78,84 84,84 C 90,84 94,80 96,76" stroke-width="1.4"/>
+    <path d="M 60,94 C 74,86 88,86 102,94 C 88,102 74,102 60,94 Z" fill="url(#goldPeacock)" fill-opacity="0.15" stroke-width="1.2"/>
+    <path d="M 50,96 C 62,98 98,98 112,96" stroke-width="0.9"/>
+  </g>
+</svg>

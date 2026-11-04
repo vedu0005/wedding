@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" width="240" height="50">
+  <defs>
+    <linearGradient id="goldFlourish" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.2"/>
+      <stop offset="25%" stop-color="#C59B4B"/>
+      <stop offset="50%" stop-color="#E5C77C"/>
+      <stop offset="75%" stop-color="#C59B4B"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldFlourish)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Center lotus flower -->
+    <g transform="translate(120, 25)">
+      <!-- Central petal -->
+      <path d="M 0,-14 C -4,-6 -4,0 0,2 C 4,0 4,-6 0,-14 Z" fill="url(#goldFlourish)" fill-opacity="0.4" stroke-width="1.2"/>
+      <!-- Side petals -->
+      <path d="M -1,-1 C -8,-7 -12,0 0,6" stroke-width="1.2"/>
+      <path d="M 1,-1 C 8,-7 12,0 0,6" stroke-width="1.2"/>
+      <path d="M -3,2 C -11,3 -12,9 -2,9" stroke-width="1.1"/>
+      <path d="M 3,2 C 11,3 12,9 2,9" stroke-width="1.1"/>
+      <circle cx="0" cy="1" r="2" fill="url(#goldFlourish)"/>
+    </g>
+    <!-- Left flourish & curling vines -->
+    <path d="M 102,26 C 92,26 84,20 72,21 C 60,22 50,30 38,26 C 28,22 22,26 15,26" stroke-width="1.2"/>
+    <path d="M 72,21 C 70,14 76,10 82,14" stroke-width="0.9"/>
+    <circle cx="83" cy="14" r="1.5" fill="url(#goldFlourish)"/>
+    <circle cx="48" cy="27" r="1.5" fill="url(#goldFlourish)"/>
+    <path d="M 15,26 C 8,26 4,20 8,15 C 12,10 18,14 15,19 C 13,22 9,21 9,18" stroke-width="0.9"/>
+    
+    <!-- Right flourish & curling vines (symmetric) -->
+    <path d="M 138,26 C 148,26 156,20 168,21 C 180,22 190,30 202,26 C 212,22 218,26 225,26" stroke-width="1.2"/>
+    <path d="M 168,21 C 170,14 164,10 158,14" stroke-width="0.9"/>
+    <circle cx="157" cy="14" r="1.5" fill="url(#goldFlourish)"/>
+    <circle cx="192" cy="27" r="1.5" fill="url(#goldFlourish)"/>
+    <path d="M 225,26 C 232,26 236,20 232,15 C 228,10 222,14 225,19 C 227,22 231,21 231,18" stroke-width="0.9"/>
+  </g>
+</svg>
